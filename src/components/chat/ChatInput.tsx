@@ -1,5 +1,5 @@
 import { memo, useCallback, KeyboardEvent, ChangeEvent } from 'react';
-import { Send } from 'lucide-react';
+import { Send, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 
@@ -8,13 +8,15 @@ interface ChatInputProps {
   onChange: (value: string) => void;
   onSend: () => void;
   disabled?: boolean;
+  error?: string | null;
 }
 
 export const ChatInput = memo(function ChatInput({
   value,
   onChange,
   onSend,
-  disabled
+  disabled,
+  error
 }: ChatInputProps) {
   const handleKeyDown = useCallback((e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -33,6 +35,12 @@ export const ChatInput = memo(function ChatInput({
 
   return (
     <div className="border-t border-border bg-card p-4">
+      {error && (
+        <div className="flex items-center gap-2 text-destructive text-sm mb-3 max-w-4xl mx-auto">
+          <AlertCircle className="w-4 h-4 flex-shrink-0" />
+          <span>{error}</span>
+        </div>
+      )}
       <div className="flex gap-2 max-w-4xl mx-auto">
         <Textarea
           value={value}
