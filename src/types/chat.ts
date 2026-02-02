@@ -11,11 +11,12 @@ export interface Message {
   content: string;
   citations?: Citation[];
   outOfScope?: boolean;
+  timestamp?: Date;
 }
 
 export interface ChatResponse {
-  answer: string;
-  citations: Citation[];
-  out_of_scope: boolean;
+  response: string;
   threadId: string;
+  citations?: Citation[];
+  out_of_scope?: boolean;
 }
