@@ -1,121 +1,86 @@
-# Intelligent Automotive Manual with Travel Checklist
+# Manual Automotivo Inteligente com Checklist de Viagem
 
-This project consists of the development of an **interactive web application** that leverages **Artificial Intelligence** to assist users in accessing technical vehicle information and preparing for trips. The solution combines **Large Language Models (LLMs)**, a **Retrieval-Augmented Generation (RAG)** approach, and a **conversational interface**, providing a practical, intuitive, and efficient user experience.
-
-## 🚗 Main Features
-
-### 📘 Intelligent Automotive Manual (RAG)
-The **Intelligent Automotive Manual** feature allows users to ask questions in natural language about their vehicle, such as usage instructions, maintenance guidelines, and safety information. The application uses a **RAG-based approach**, ensuring that responses are generated **exclusively from the vehicle manual content**.
-
-Key characteristics:
-- Answers strictly grounded in the vehicle manual (reduced hallucinations)
-- Natural language understanding
-- Semantic retrieval of technical information
-- Increased reliability and accuracy of responses
+Este projeto consiste no desenvolvimento de uma **aplicação web interativa** que utiliza **Inteligência Artificial** para auxiliar usuários no acesso a informações técnicas do veículo e na preparação para viagens. A solução combina **Modelos de Linguagem (LLMs)**, a abordagem **RAG (Retrieval-Augmented Generation)** e uma **interface conversacional**, oferecendo uma experiência prática, intuitiva e confiável.
 
 ---
 
-### 🧳 Intelligent Pre-Trip Checklist
-The **Intelligent Pre-Trip Checklist** feature helps users prepare for travel by generating personalized recommendations based on a simple form (e.g., trip distance, route type, travel duration). This functionality uses an **external LLM API** to interpret user inputs and generate a contextualized checklist.
+## 🚗 Funcionalidades Principais
 
-Key characteristics:
-- Automatic generation of a personalized checklist
-- Semantic interpretation of user-provided data
-- Practical, safety-oriented recommendations
-- Simple and user-friendly interface
+### 📘 Manual Automotivo Inteligente (RAG)
+O **Manual Automotivo Inteligente** permite que o usuário faça perguntas em linguagem natural sobre o veículo, como instruções de uso, orientações de manutenção e informações de segurança.  
+A aplicação utiliza **RAG**, garantindo que as respostas sejam geradas **exclusivamente a partir do conteúdo do manual do veículo**.
+
+**Características:**
+- Respostas estritamente fundamentadas no manual
+- Redução de alucinações
+- Compreensão de linguagem natural
+- Recuperação semântica de informações técnicas
+- Alta confiabilidade e precisão
 
 ---
 
-## 💡 Project Highlights
-- Combined use of **RAG and LLMs** within the same application
-- Conversational interface for easier access to information
-- Focus on reliability, usability, and practical value
-- AI applied as a support tool rather than a replacement for human judgment
+### 🧳 Checklist Inteligente Pré-Viagem
+O **Checklist Inteligente Pré-Viagem** auxilia o usuário na preparação para viagens, gerando recomendações personalizadas a partir de um formulário simples (ex.: distância, tipo de rota e duração da viagem).  
+Essa funcionalidade utiliza uma **API externa de LLM** para interpretar os dados e gerar um checklist contextualizado.
 
-## 🛠️ Technologies Used
-- Web Frontend (generated with Lovable)
-- Integration with **LLM APIs**
-- **Retrieval-Augmented Generation (RAG)** approach
-- JavaScript / TypeScript / React
+**Características:**
+- Geração automática de checklist personalizado
+- Interpretação semântica dos dados do usuário
+- Recomendações práticas com foco em segurança
+- Interface simples e amigável
+
+---
+
+## 💡 Destaques do Projeto
+- Uso combinado de **RAG** e **LLMs** na mesma aplicação
+- **Interface conversacional** para facilitar o acesso às informações
+- Foco em **confiabilidade, usabilidade e valor prático**
+- IA como **ferramenta de apoio à decisão**, não substituta do julgamento humano
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- React
+- TypeScript
+- JavaScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
 - Supabase (Edge Functions)
+- Integração com APIs de LLM
+- Abordagem RAG (Retrieval-Augmented Generation)
 
 ---
 
-This project demonstrates the potential of **Artificial Intelligence applied to automotive systems**, reinforcing its role as a support tool for decision-making, safety, and enhanced user experience.
+## ▶️ Como Executar o Projeto
 
+### Pré-requisitos
+- Node.js
+- npm
 
----
-
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 1. Clonar o repositório
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+### 2. Acessar a pasta do projeto
+```bash
+cd <NOME_DO_PROJETO>
+```
+### 3. Instalar as dependências
+```bash
+npm install
+```
+### 4. Executar em modo desenvolvimento
+```bash
 npm run dev
 ```
+### 5. Acessar no navegador
+```bash
+http://localhost:8080
+```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 6. Build para produção
+```bash
+npm run build
+npm run preview
+```
