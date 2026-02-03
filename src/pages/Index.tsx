@@ -11,7 +11,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Car className="w-7 h-7 text-primary" />
-            <span className="text-xl font-bold">Manual Veicular</span>
+            <span className="text-xl font-bold">Stellantis Companion</span>
           </div>
         </div>
       </header>
