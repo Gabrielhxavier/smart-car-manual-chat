@@ -20,7 +20,7 @@ export const ChatHeader = memo(function ChatHeader({
             <Car className="w-5 h-5 text-accent" />
           </div>
           <div>
-            <h1 className="text-lg font-semibold">Manual Veicular Inteligente</h1>
+            <h1 className="text-lg font-semibold">Stellantis Companion</h1>
             <p className="text-xs text-header-foreground/70">
               Assistente RAG • Respostas baseadas no manual oficial
             </p>
