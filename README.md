@@ -86,7 +86,7 @@ npm run preview
 ```
 ## 📄 Documentação
 
-- 📘 [Documentação de Prompts (PDF)](docs/Documentação_de_prompts.pdf)
-- 📐 [Metodologia e Diagramas (PDF)](docs/metodologia_e_diagramas.pdf)
+- 📘 [Documentação de Prompts (PDF)](docs/Documentação_de_prompts.docx)
+- 📐 [Metodologia e Diagramas (PDF)](docs/Metodologia_e_Artefatos.docx)
 
 
