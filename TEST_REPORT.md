@@ -40,6 +40,7 @@ npm run test:watch
 ## Execução dos testes — Resultado
 
 - Comandos usados: `npm install` seguido de `npm run test`.
+- Resultado inicial: 3 testes passaram (3/8)
 - Resultado final: 8 testes passaram (8/8).
 
 ## Falhas encontradas e correções aplicadas
@@ -177,11 +178,3 @@ npm run test
 - `src/test/setup.ts` — adicionei polyfills para o ambiente de teste.
 - `TEST_REPORT.md` — este relatório.
 
-## O que eu posso fazer a seguir
-
-- Fazer um commit e abrir um Pull Request com essas mudanças.
-- Adicionar mais testes simples, por exemplo:
-  - Mostrar um aviso quando a mensagem ultrapassa X caracteres.
-  - Testes de acessibilidade (se desejar).
-
-Se quiser que eu faça o commit e abra o PR, digo o título e a descrição e eu faço isso para você.
