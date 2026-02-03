@@ -1,1 +1,4 @@
 project_id = "ntoktqnprqlceadopqmh"
+
+[functions.travel-checklist]
+verify_jwt = false
