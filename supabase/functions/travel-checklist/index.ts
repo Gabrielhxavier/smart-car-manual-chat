@@ -68,13 +68,21 @@ FORMATO DE RESPOSTA (JSON):
   "checklist": [
     {
       "category": "string (ex: Pneus, Fluidos, Documentos, Iluminação, Segurança)",
-      "item": "string (descrição da verificação)",
+      "item": "string (nome/descrição da verificação, ex: 'Verificar pressão dos pneus')",
       "priority": "essential | recommended | optional",
       "explanation": "string (apenas se usuário não for advanced)",
-      "estimatedTime": number (minutos)
+      "estimatedTime": number (minutos, ex: 5)
     }
   ],
-  "essential_items": [/* itens que DEVEM ser verificados antes de sair, mesmo com pouco tempo */],
+  "essential_items": [
+    {
+      "category": "string (categoria do item)",
+      "item": "string (nome/descrição da verificação - OBRIGATÓRIO, nunca deixe vazio)",
+      "priority": "essential",
+      "explanation": "string (breve explicação)",
+      "estimatedTime": number (minutos, ex: 2)
+    }
+  ],
   "red_flags": [
     {
       "issue": "string (problema identificado)",
@@ -85,7 +93,9 @@ FORMATO DE RESPOSTA (JSON):
   "questions_to_user": ["string (perguntas para refinar o checklist, se dados incompletos)"],
   "total_estimated_time": number (tempo total em minutos),
   "summary": "string (resumo breve da avaliação)"
-}`;
+}
+
+IMPORTANTE: Todos os campos "item" devem conter texto descritivo, NUNCA deixe vazio. Todos os campos "estimatedTime" devem ser números inteiros positivos.`;
 }
 
 function buildUserPrompt(input: TravelInput): string {

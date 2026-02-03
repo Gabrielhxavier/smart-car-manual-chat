@@ -1,5 +1,6 @@
 import { memo } from 'react';
-import { RotateCcw, Car } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { RotateCcw, Car, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface ChatHeaderProps {
@@ -26,18 +27,31 @@ export const ChatHeader = memo(function ChatHeader({
           </div>
         </div>
         
-        {hasMessages && (
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onClear}
-            className="text-header-foreground/80 hover:text-header-foreground 
-                       hover:bg-white/10 gap-2"
-          >
-            <RotateCcw className="w-4 h-4" />
-            <span className="hidden sm:inline">Limpar conversa</span>
-          </Button>
-        )}
+        <div className="flex items-center gap-2">
+          {hasMessages && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onClear}
+              className="text-header-foreground/80 hover:text-header-foreground 
+                         hover:bg-white/10 gap-2"
+            >
+              <RotateCcw className="w-4 h-4" />
+              <span className="hidden sm:inline">Limpar conversa</span>
+            </Button>
+          )}
+          <Link to="/">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-header-foreground/80 hover:text-header-foreground 
+                         hover:bg-white/10 gap-2"
+            >
+              <Home className="w-4 h-4" />
+              <span className="hidden sm:inline">Início</span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </header>
   );
