@@ -29,6 +29,31 @@ npm run test
 # ou em watch
 npm run test:watch
 ```
+## Quais foram os testes?
+
+Exemplo básico: example.test.ts — Confirma que o ambiente de testes funciona (teste trivial que sempre passa).
+O usuário não vê nada; é só verificação técnica.
+
+Entrada de chat (ChatInput): testa que digitar chama onChange e que ao apertar Enter (sem Shift) ou clicar em Enviar a ação de enviar é disparada.
+O usuário: ao digitar e apertar Enter ou clicar no botão, a mensagem é enviada.
+
+Sugestões (SuggestionChips): verifica que clicar numa sugestão chama onSelect com o texto correto.
+O usuário: ao clicar numa sugestão pronta, ela aparece automaticamente na caixa de texto.
+
+Lista de mensagens (MessageList) — vazio: verifica que, quando não há mensagens, aparece uma tela de boas-vindas.
+O usuário: ao abrir a página pela primeira vez, vê a mensagem de boas-vindas e instruções.
+
+Lista de mensagens (MessageList) — carregando: verifica que, quando loading é true, o indicador “Consultando o manual” aparece.
+O usuário: ao enviar uma pergunta, vê um indicador/loader dizendo que a consulta está em andamento.
+
+Fluxo: pergunta fora do escopo (ChatPage): simula a API respondendo que a pergunta está fora do escopo e verifica que o app mostra a mensagem de aviso apropriada.
+O usuário: ao perguntar algo que não é sobre o manual do veículo, recebe uma mensagem explicando que a pergunta está fora do escopo e oferecendo ajuda alternativa.
+
+Fluxo: erro da API (ChatPage): simula uma falha da API e verifica que o app mostra uma mensagem de erro amigável.
+O usuário: ao tentar enviar e ocorrer erro de rede/servidor, vê uma mensagem dizendo que ocorreu um erro e para tentar novamente.
+
+Fluxo: mensagem muito longa e trim (ChatPage): envia uma mensagem longa (com espaços no final) e verifica que o texto é trim() antes de ser enviado para a API.
+O usuário: ao colar/enviar texto muito longo (ou com espaços sobrando), o app remove espaços extras e envia o texto corretamente (sem causar erro).
 
 ## O que os testes cobrem
 
