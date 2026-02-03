@@ -1,3 +1,51 @@
+# Intelligent Automotive Manual with Travel Checklist
+
+This project consists of the development of an **interactive web application** that leverages **Artificial Intelligence** to assist users in accessing technical vehicle information and preparing for trips. The solution combines **Large Language Models (LLMs)**, a **Retrieval-Augmented Generation (RAG)** approach, and a **conversational interface**, providing a practical, intuitive, and efficient user experience.
+
+## 🚗 Main Features
+
+### 📘 Intelligent Automotive Manual (RAG)
+The **Intelligent Automotive Manual** feature allows users to ask questions in natural language about their vehicle, such as usage instructions, maintenance guidelines, and safety information. The application uses a **RAG-based approach**, ensuring that responses are generated **exclusively from the vehicle manual content**.
+
+Key characteristics:
+- Answers strictly grounded in the vehicle manual (reduced hallucinations)
+- Natural language understanding
+- Semantic retrieval of technical information
+- Increased reliability and accuracy of responses
+
+---
+
+### 🧳 Intelligent Pre-Trip Checklist
+The **Intelligent Pre-Trip Checklist** feature helps users prepare for travel by generating personalized recommendations based on a simple form (e.g., trip distance, route type, travel duration). This functionality uses an **external LLM API** to interpret user inputs and generate a contextualized checklist.
+
+Key characteristics:
+- Automatic generation of a personalized checklist
+- Semantic interpretation of user-provided data
+- Practical, safety-oriented recommendations
+- Simple and user-friendly interface
+
+---
+
+## 💡 Project Highlights
+- Combined use of **RAG and LLMs** within the same application
+- Conversational interface for easier access to information
+- Focus on reliability, usability, and practical value
+- AI applied as a support tool rather than a replacement for human judgment
+
+## 🛠️ Technologies Used
+- Web Frontend (generated with Lovable)
+- Integration with **LLM APIs**
+- **Retrieval-Augmented Generation (RAG)** approach
+- JavaScript / TypeScript / React
+- Supabase (Edge Functions)
+
+---
+
+This project demonstrates the potential of **Artificial Intelligence applied to automotive systems**, reinforcing its role as a support tool for decision-making, safety, and enhanced user experience.
+
+
+---
+
 # Welcome to your Lovable project
 
 ## Project info
