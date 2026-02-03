@@ -31,7 +31,7 @@ function ChecklistItemRow({ item, checked, onToggle }: {
   checked: boolean;
   onToggle: () => void;
 }) {
-  const config = priorityConfig[item.priority];
+  const config = priorityConfig[item.priority] || priorityConfig.recommended;
   const Icon = config.icon;
 
   return (
