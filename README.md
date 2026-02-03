@@ -84,3 +84,9 @@ http://localhost:8080
 npm run build
 npm run preview
 ```
+## Documentação
+
+- O conteúdo dos prompts está disponível em: [Documentação de Prompts (PDF)](docs/Introdução%20à%20IA%20-%20Documentação%20de%20prompts/documentacao-prompts.pdf)
+- A metodologia e diagramas está disponível em: [Uso da IA no Processo (PDF)](docs/Introdução%20à%20IA%20-%20Documentação%20de%20prompts/Uso%20da%20IA%20no%20processo.pdf)
+
+
